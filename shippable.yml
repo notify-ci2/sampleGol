@@ -9,7 +9,7 @@ go:
 
 build:
   pre_ci_boot:
-    image_name: drydock/u14gol
+    image_name: drydock/u14goltyrh
     image_tag: prod
     pull: true
    
