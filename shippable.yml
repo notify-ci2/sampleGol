@@ -7,6 +7,9 @@ go:
   - 1.1
   - 1.2
   - 1.3
+  
+env:
+  - FOO=Bar
 
 build:
   pre_ci:
@@ -18,7 +21,7 @@ build:
     pull: false
     
   ci:
-    - go version 
+    - echo "$FOO" 
    # - ps -eax
    # - ls -al 
  
@@ -29,4 +32,3 @@ integrations:
   hub:
     - integrationName: ship-docker
       type: docker
-  
